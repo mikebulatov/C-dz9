@@ -12,9 +12,9 @@ int Akkerman(int m,int n)
   
 }
 
-Console.Write("Введите натуральное число m:");
+Console.Write("Введите неотрицательное число m:");
 int m=Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите натуральное число n:");
+Console.Write("Введите неотрицательное число n:");
 int n=Convert.ToInt32(Console.ReadLine());
 if (m>=0 & n>=0){
 Console.WriteLine($"Значение функции Аккермана для чисел {m} и {n} равна {Akkerman(m,n)}");  
