@@ -3,8 +3,13 @@
 
 int Akkerman(int m,int n)
 {
+  if(m>0)
+  {
+   if(n>0) return Akkerman(m-1,Akkerman(m,n-1));
+   else return Akkerman(m-1,1);
+  }
+  else return n+1;
   
-  return m;
 }
 
 Console.Write("Введите натуральное число m:");
