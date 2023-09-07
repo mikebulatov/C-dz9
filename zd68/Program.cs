@@ -1,28 +1,19 @@
-﻿Console.WriteLine("Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.");
+﻿Console.WriteLine("Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.");
 
 
-int SumNum(int N,int M)
+int Akkerman(int m,int n)
 {
-  if(N<M)
-  {
-    return N+SumNum(N+1,M);
   
-  } 
-  if(N>M)
-  {
-    return M+SumNum(N,M+1);
-  
-  }
-  return M;
+  return m;
 }
 
-Console.Write("Введите натуральное число N:");
-int N=Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите натуральное число M:");
-int M=Convert.ToInt32(Console.ReadLine());
-if (N>0 & M>0){
-Console.WriteLine($"Сумма натуральных элементов в промежутке от M до N равна {SumNum(N,M)}");  
+Console.Write("Введите натуральное число m:");
+int m=Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите натуральное число n:");
+int n=Convert.ToInt32(Console.ReadLine());
+if (m>=0 & n>=0){
+Console.WriteLine($"Значение функции Аккермана для чисел {m} и {n} равна {Akkerman(m,n)}");  
 }
 else{
-  Console.WriteLine("Одно или оба введеных числа не натральные");
+  Console.WriteLine("Одно или оба введеных числа отрицательные");
 }
